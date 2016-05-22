@@ -1,0 +1,52 @@
+
+body
+{
+	background-color: hsl(100, 10%, 85%);
+	color: rgb(115, 88, 53);
+}
+h1{
+	margin-left: 40%;
+}
+.days
+{
+	margin-top: 0px;
+	margin-left: 30%;
+	display: none;
+	position: absolute;
+}
+#mon
+{
+	display: block;
+}
+
+.selection li 
+{
+	list-style-type: none;
+	display: inline;
+	padding: 15px 15px 15px 15px;
+	height: 60px;
+}
+.selection li a
+{
+	text-decoration: none;
+	color: #A2854C;
+	overflow: auto;
+}
+.selection li:last-child
+{
+	border-top-right-radius: 20px 20px;
+	border-bottom-right-radius: 20px 20px;
+	
+}
+.selection li:first-child
+{
+	margin-left: 25%;
+	border-top-left-radius: 20px 20px;
+	border-bottom-left-radius: 20px 20px;
+}
+
+.selection li
+{
+	background-color: #D2E1F5;
+	border-right: #B8BFB3 groove 2px;
+}

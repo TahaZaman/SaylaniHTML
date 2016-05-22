@@ -1,0 +1,65 @@
+ul.navbar li
+{
+	list-style-type: none;
+	float: left;
+	border-right: ridge; 
+	padding: 20px 20px 20px 20px;
+	background-color: hsl(100, 60%, 40%);
+}
+
+
+ul.navbar li:first-child
+{
+	margin-left: 30%;
+}
+
+ul.navbar li a
+{
+	display: block;
+		
+}
+
+ul.navbar li a:link
+{
+	text-decoration: none;
+	color: wheat;
+}
+
+ul.navbar li:hover
+{
+	background-color: hsl(100, 40%, 40%);
+}
+
+#p1
+{
+	background-color: hsl(100, 10%, 80%);
+	padding: 20px 10px 10px 10px;
+	border-top-left-radius: 800px 250px; 
+}
+body
+{
+	background-color: hsl(100, 10%, 85%);
+}
+#p2
+{
+	margin-top: 0%;
+	width: 100%;
+	background-color: white;
+	height: 50%;
+}
+
+
+ul.navbar li a:visited
+{
+	text-decoration: none;
+	color: wheat;
+}
+
+#d1
+{
+	background-color: hsl(100, 10%, 75%);
+	padding:0;
+	margin-left: 25%;
+	margin-right: 30%;
+}
+

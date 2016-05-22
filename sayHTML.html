@@ -1,35 +1,40 @@
 <html>
 <head>
     <title>My Week's schedule</title>
+	<link href = "css/nxtweek.css" rel="stylesheet"/>
 </head>
 <body>
     <h1 id="top">The New Week</h1>
-    <ul>
-        <li><a href="#mon">Monday</a> </li>
-        <li><a href="#tue">Tuesday</a> </li>
-        <li><a href="#wed">Wednesday</a> </li>
-        <li><a href="#thu">Thursday</a> </li>
-        <li><a href="#fri">Friday</a> </li>
-        <li><a href="#sat">Saturday</a> </li>
+	<div><a  href="index.html"><img align="right" src="images/bk.png" height=50px width=50px/></a></div>
+
+    <ul class= "selection">
+        <li onclick="disp('mon')"><a  href="#mon">Monday</a> </li>
+        <li onclick="disp('tue')"><a href="#tue">Tuesday</a> </li>
+        <li onclick="disp('wed')"><a href="#wed">Wednesday</a> </li>
+        <li onclick="disp('thu')"><a href="#thu">Thursday</a> </li>
+        <li onclick="disp('fri')"><a href="#fri">Friday</a> </li>
+        <li onclick="disp('sat')"><a href="#sat">Saturday</a> </li>
+	
     </ul>
-    <h2>The new day is Monday</h2>
-    <div id="mon">
+		
+	    <div id="mon" class = "days">
+		<h2>The new day is Monday</h2>
        
-        <p>My <b>timetable</b> of the day:</p>
-        <ul>
-    <li>Complete my <strong>DBMS lab</strong> lab assigment and work book<hr /></li>
+        	<p>My <b>timetable</b> of the day:</p>
+        	<ul>
+    			<li>Complete my <strong>DBMS lab</strong> lab assigment and work book<hr /></li>
    
-    <li>Complete <strong>CA lab</strong> project and lab work <hr /></li>
+    			<li>Complete <strong>CA lab</strong> project and lab work <hr /></li>
     
-    <li><strong>Debug</strong> of the FootBallNewsGuru app<hr /></li>
+    			<li><strong>Debug</strong> of the FootBallNewsGuru app<hr /></li>
     
-    <li>Do my chores<hr /></li>
-    <li>Have fun and relax the rest of the day<hr /></li>
-</ul>
-        <a href="#top">Back to top</a>
-    </div>
+    			<li>Do my chores<hr /></li>
+    			<li>Have fun and relax the rest of the day<hr /></li>
+		</ul>
+	</div>
+<div id='tue' class = "days">
     <h2>The new day is Tuesday</h2>
-    <div id='tue'>
+    
         
         <p>My <b>timetable</b> of the day:</p>
         <ul>
@@ -42,10 +47,10 @@
     <li>Do my chores<hr /></li>
     <li>Have fun and relax the rest of the day<hr /></li>
 </ul>
-        <a href="#top">Back to top</a>
     </div>
-    <h2>The new day is Wednesday</h2>
-    <div id='wed'>
+    
+    <div id='wed' class = "days">
+	<h2>The new day is Wednesday</h2>
         <p>My <b>timetable</b> of the day:</p>
         <ul>
             <li>Do my <strong>CS</strong> lab work<hr /></li>          
@@ -60,10 +65,10 @@
             <li>Do my chores</li>
             <li>Have fun and relax the rest of the day<hr /></li>
         </ul>
-        <a href="#top">Back to top</a>
     </div>
-    <h2>The new day is Thursday</h2>
-    <div id='thu'>
+
+    <div id='thu' class = "days">
+	    <h2>The new day is Thursday</h2>
         <p>My <b>timetable</b> of the day:</p>
         <ul>
             <li>Do my <strong>IC</strong> lab work<hr /></li>
@@ -73,10 +78,11 @@
             <li>Do my chores</li>
             <li>Have fun and relax the rest of the day<hr /></li>
         </ul>
-        <a href="#top">Back to top</a>
+       
     </div>
-    <h2>The new day is Friday</h2>
-    <div id='fri'>
+    
+    <div id='fri' class = "days">
+	<h2>The new day is Friday</h2>
         <p>My <b>timetable</b> of the day:</p>
         <ul>
             <li><strong>Fix bugs</strong> of the FootBallNewsGuru app<hr /></li>
@@ -84,10 +90,11 @@
             <li>Do my chores</li>
             <li>Have fun and relax the rest of the day<hr /></li>
         </ul>
-        <a href="#top">Back to top</a>
+        
     </div>
-    <h2>The new day is Saturday</h2>
-    <div id="sat">
+    
+    <div id="sat" class = "days">
+	<h2>The new day is Saturday</h2>
         <p>My <b>timetable</b> of the day:</p>
         <ul>
             <li>Do my <strong>HTML</strong> assigment (it is <em>the last</em> day)<hr /> </li>
@@ -102,9 +109,19 @@
             <li>Almost forgot my chores<hr /></li>
             <li>Have fun and relax the rest of the day<hr /></li>
         </ul>
-        <a href="#top">Back to top</a>
+        
     </div>
+	<script>
+		function disp(selectr){
+			var arr = document.getElementsByClassName("days");
+			for(var i=0; i<arr.length;i++)
+			{
+				arr[i].style.display = "none";
+			}
 
+			document.getElementById(selectr).style.display = "block";
+		}		
+	</script>
     
 </body>
 </html>
